@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "DINPro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("DINPro"),
+        url("fonts/DINPro.woff") format("woff"),
+        url("fonts/DINPro.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "DINPro";
+    font-style: normal;
+    font-weight: 500;
+    src: local("DINPro"),
+        url("fonts/DINPro-Medium.woff") format("woff"),
+        url("fonts/DINPro-Medium.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "DINPro";
+    font-style: normal;
+    font-weight: 600;
+    src: local("DINPro"),
+        url("fonts/DINPro-Bold.woff") format("woff"),
+        url("fonts/DINPro-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "MyriadPro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Myriad Pro"),
+        url("fonts/MyriadProRegular.ttf") format("ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "DINPro", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: white;
+    min-width: 320px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects__title {
+    font-size: 46px;
+    color: rgb(52, 66, 88);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 60px 0 50px;
+    font-weight: normal;
+}
+  
+
+@media (max-width: 652px) {
+.projects__title {
+    text-align: center;
+    font-size: 28px;
+    margin: 30px 0;
+    }
+}
+
+.projects__text {
+    color: rgb(8, 23, 45);
+    max-width: 1160px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-button {
+    background-color: inherit;
+    color: rgb(52, 66, 88);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: 3px solid #00264c;
+    border-radius: 0px;
+    margin-bottom: 100px;
+    padding: 15px 105px;
+}
+
+.projects-button_form {
+    color: white;
+    border: 3px solid white;
+    padding: 15px 60px;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+@media (max-width: 652px) {
+    .projects-button {
+        margin-bottom: 60px;
+        padding: 12px 60px;
+    } 
+}
+
+.projects__cards {
+    width: 100%;
+    margin: 120px 0 80px;
+}
+
+@media (max-width: 652px) {
+    .projects__cards {
+        margin: 30px 0 40px;
+    } 
+}
+
+.cards__item {
+    max-width: 600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media (max-width: 960px) {
+    .cards__item {height: 400px;}
+}
+
+.cards__item_type_saha {
+    background-image: linear-gradient(0deg, rgba(66, 76, 87, 0.9), rgba(230, 233, 233, 0.1) 55%), url(img/saha.jpg);
+}
+
+.cards__item_type_gazprom {
+    background-image: linear-gradient(0deg, rgba(66, 76, 87, 0.9), rgba(230, 233, 233, 0.1) 55%), url(img/gazprom.jpg);
+    background-position-x: 45%;
+}
+
+.cards__item_type_nokia {
+    background-image: linear-gradient(0deg, rgba(66, 76, 87, 0.9), rgba(230, 233, 233, 0.1) 55%), url(img/nokia.jpg);
+}
+
+.cards__title {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.cards__title:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+footer {
+    background-color: #0d1b2b;
+    color: white;
+    width: 100%;
+    padding: 30px 0 100px;
+}
+
+.footer__content {
+    max-width: 1360px;
+    margin: auto;
+    align-items: end;
+}
+
+.contacts {
+    font-family: "MyriadPro", sans-serif;
+}
+
+.contacts__title {
+    padding: 50px 0 70px;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: "DINPro";
+}
+
+@media (max-width: 652px) {
+    .contacts__title {
+        padding: 40px 0;
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
+
+.contacts__text {
+    padding-bottom: 40px;
+}
+
+@media (max-width: 652px) {
+    .contacts__text {
+        padding-bottom: 20px;
+    }
+}
+
+.contacts__adress {
+    color: #3d95e3;
+}
+
+.contacts__adress_policy {
+    text-decoration: underline;
+    align-self: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.contacts__tel {
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.contacts__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__inner_adress {
+    border-left: 2px solid #3d95e3;
+    align-self: flex-end;
+    padding-top: 20px;
+}
+
+.form {
+    max-width: 550px;
+    border: 4px solid #243448;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-content: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.form__input {
+    background-color: #243448;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 2px;
+    padding-left: 40px;
+}
+
+.form__input::-webkit-input-placeholder {color: white;}
+.form__input:-moz-placeholder           {color: white;}
+.form__input:-ms-input-placeholder      {color: white;}
+
+textarea.form__input {
+    height: 115px;
+    padding-top: 15px;
+}
+
+@media (max-width: 1248px) {
+    .contacts__inner {
+        flex-basis: 100%;
+    }
+    .contacts__inner_adress {
+        border-left: none;
+        padding: 40px 20px 0;
+    }
+    .projects-button_form {
+        padding: 12px 5px;
+        margin-bottom: 0;
+    } 
+    .form {
+        padding: 20px;
+    }
+    footer {
+        padding-bottom: 60px;
+    }
+    .contacts {
+        margin-bottom: 30px;
+    }
+}
+
+.popup {
+    width: calc(100vw - 40px);
+    max-width: 600px;
+    height: fit-content;
+    color: white;
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    padding: 36px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: none;
+}
+
+.popup_opened {
+    display: block;
+}
+
+.popup__title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.popup__close {
+    background: transparent;
+    border: none;
+    transform: rotate(45deg);
+    color: white;
+    font-size: 48px;
+    line-height: 1;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}

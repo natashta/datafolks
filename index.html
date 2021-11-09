@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+    <title>test</title>
+</head>
+<body>
+    <section class="popup">
+        <button class="popup__close" type="button">+</button>
+        <h2 class="popup__title"></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+    <main class="container-fluid">
+        <h1 class="visually-hidden">Некое агентство</h1>
+        <section class="projects">
+            <h2 class="projects__title">Реализованные проекты</h2>
+            <p class="projects__text">
+                Коммуникационное агентство – часть многофункционального холдинга, объединяющего различные компании на территории России и ближнего зарубежья. 
+            </p>
+            <p class="projects__text">
+                Наши подходы к организации бизнеса и имеющиеся ресурсы позволяют одинаково эффективно обеспечивать реализацию как крупномасштабных федеральных или международных проектов, так и решать небольшие локальные задачи. Мы находимся в постоянном развитии, расширяя и укрепляя имеющиеся бизнес-направления, а также формируя новые.
+            </p>
+            <ul class="projects__cards row">
+                <li class="cards__item cards__item_type_saha col-sm-4">
+                    <h3 class="cards__title">Республика Саха</h3>
+                </li>
+                <li class="cards__item cards__item_type_gazprom col-sm-4">
+                    <h3 class="cards__title">Газпром</h3>
+                </li>
+                <li class="cards__item cards__item_type_nokia col-sm-4">
+                    <h3 class="cards__title">Nokia</h3>
+                </li>
+
+            </ul>
+            <button class="projects-button btn-outline-dark btn-lg" type="button">Загрузить еще</button>
+        </section>
+    </main>
+    <footer>
+        <section class="footer__content container-xl row">
+        <section class="contacts col-md">
+            <h2 class="contacts__title">Контакты</h2>
+            <p>Коммуникационное агентство</p>
+            <p class="contacts__text">344000, Россия, г. Ростов-на-Дону ул. Мира, д. 12<br> 
+                Бизнес–центр «Рост», оф. 104</p>
+            <div class="contacts__wrapper row">
+                <div class="contacts__inner col">
+                    <a class="contacts__tel" href="tel:+78613001128">+7 (861) 300-11-28</a>
+                    <a class="contacts__tel" href="tel:+78613001152">+7 (861) 300-11-52</a>
+                    <a class="contacts__tel" href="tel:+78613001152">+7 (861) 300-11-52</a>
+                </div>
+                <div class="contacts__inner contacts__inner_adress col">
+                    <p class="contacts__adress">Email:<br><a class="contacts__adress" href="mailto:info@example.com">info@example.com</a></p> 
+                    <a class="contacts__adress" href="#">facebook.com/exampleagency</a>
+                </div>
+            </div>
+        </section>
+        <section class="col-md">
+            <form class="form" name="contact-form">
+                <input class="form__input" type="text" name="user_name" placeholder="Полное имя">
+                <input class="form__input" type="email" name="user_mail" placeholder="E-mail">
+                <input class="form__input" type="tel" name="user_phone" placeholder="Телефон">
+                <textarea class="form__input" name="user_message">Пожалуйста, опишите задачу</textarea>
+                <a href="#" class="contacts__adress contacts__adress_policy">Политика обработки персональных данных</a>
+                <button class="projects-button projects-button_form btn-outline-light btn-sm" type="submit">Отправить заявку</button>
+            </form>
+        </section> 
+    </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
